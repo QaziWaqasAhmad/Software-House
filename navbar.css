@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.navbar-nav li a:hover{
+    color: black;
+    
+}
+.navbar-brand:hover{
+    color: black;
+    
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url("img/lp12.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.headers:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+.navbar{
+    /* width: 100%; */
+    cursor: pointer;
+    position: relative;
+    bottom: 5%;
+    background: linear-gradient( #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);   
+    /* padding: 10px 0; */
+ 
+}
+.navbar-nav li{ 
+    padding: 0 17px;
+    
+  }
+
+.navbar :before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.1;
+    background: linear-gradient(to left, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);   
+}
+
+.nav-item a{
+    color: #fff;
+    font-weight: bold;
+}
+.navbar-brand{
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.container{
+    margin-top: 23px;
+}
+
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url("../img/lp12.jpg");
+    background-size: cover; */
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+    padding: 23px 0;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: 	#2F4F4F;
+}
+.contact .content p{
+  
+    font-weight: 300;
+    color: #2F4F4F;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40%;
+}
+
+
+.box{
+    padding: 15px ;
+    /* position: relative; */
+    display: flex;
+}
+
+.container .contactinfo .box .icon{
+  width: 60px;
+   height: 60px;
+   background: #2F4F4F;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   font-size: 22px;
+   position: absolute;
+   left:109px; 
+}
+.text{
+    display: flex;
+    font-size: 20px;
+    color: #fff;
+
+    flex-direction: column;
+    font-weight: 300;
+}
+.text h3{
+    font-weight: bold;
+    color: #2F4F4F;
+   
+}
+.contactform{
+    position: absolute;
+    right: 8%;
+    top: 214px;
+    width: 30%;
+    padding: 30px;
+    background: #fff;
+    
+}
+.contactform h2{
+    font-size: 30px;
+    color: #2F4F4F;
+    font-weight: bold;
+}
+.contactform .inputtext{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputtext input,
+.contactform .inputtext textarea
+{
+    width: 100%;
+    padding: 6px 0;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputtext span{
+    position: absolute;
+    left: 0;
+    padding: 6px 0;
+    font-size: 16px;
+    margin: 10px 0; 
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.icon{
+   background-color: #2F4F4F;
+}
+
+.contactform .inputtext input:focus ~ span,
+.contactform .inputtext input:valid ~ span,
+.contactform .inputtext textarea:focus ~ span,
+.contactform .inputtext textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.btn
+{
+    width: 82px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 16px;
+}
